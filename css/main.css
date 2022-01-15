@@ -1,5 +1,7 @@
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 /* global css style */
 *{
   margin: 0;
@@ -21,12 +23,12 @@ img{
 .container{
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 .container-big{
   max-width: 1047px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 .d-flex{
   display: flex;
@@ -61,8 +63,19 @@ img{
 .grid-colume-7{
   grid-template-columns: repeat(7, 1fr);
 }
+.grid-colume-gap{
+  grid-column-gap: 30px;
+}
+.grid-row-gap{
+  grid-row-gap: 30px
+}
+.rounded{
+  border-radius: 5px;
+}
 .btn{
   display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
   color: #fff;
   background: #E02C6D;
   padding: 10px 24px;
@@ -97,6 +110,16 @@ img{
   font-weight: 500;
   font-size: 28px;
   line-height: 40px;
+}
+.h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+}
+i.fas.fa-arrow-right {
+  margin-left: 10px;
+  font-size: 17px;
 }
 /* header navigation css */
 .navbar {
@@ -208,4 +231,52 @@ section.start-journy {
   border-bottom: 1px solid #C0CCDA;
   border-top: 1px solid #C0CCDA;
   padding: 36px 0;
+}
+
+/* feature product lists */
+section.feature-product-list {
+  padding: 80px 0;
+}
+.feature-product-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.feature-product-box {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+  border-radius: 5px;
+}
+.feature-product-content {
+  padding: 20px;
+}
+.feature-product-content h5{
+  margin-top: 12px;
+}
+.review-star {
+  margin: 8px 0;
+}
+i.fas.fa-star {
+  color: #FB8200;
+  font-size: 12px;
+}
+.review-star span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+.feature-product-content p.p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.see-more-button {
+  text-align: right;
+  margin-top: 30px;
+}
+.see-more-button a.btn {
+  background-color: transparent;
+  color: #E02C6D;
+  border-color: transparent;
 }
