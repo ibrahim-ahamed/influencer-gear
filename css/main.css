@@ -73,7 +73,7 @@ img{
   border-radius: 5px;
 }
 .btn{
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   color: #fff;
@@ -84,7 +84,13 @@ img{
   line-height: 26px;
   border: 1px solid;
   border-color: #E02C6D;
+  width: 147px;
+  animation: a9 1.2s infinite linear alternate;
   transition: all .4s;
+}
+@keyframes a9 {
+  0%   {transform: translate(-10px)}
+  100% {transform: translate( 30px)}
 }
 .btn:hover{
   color: #E02C6D;
@@ -387,4 +393,61 @@ a.sicial-link {
   line-height: 50px;
   background-color: #22213C;
   border-radius: 50%;
+}
+
+/* media query */
+/* tab mobile  */
+@media (min-width:767px) and (max-width:1024px){
+  .grid-row-gap {
+    grid-row-gap: 15px;
+}
+
+.grid-colume-gap {
+    grid-column-gap: 15px;
+}
+.grid-colume-3 {
+  grid-template-columns: repeat(2, 1fr);
+}
+label.main-tab-label.h4 {
+  font-size: 22px;
+  line-height: 32px;
+}
+.h1 {
+  font-size: 35px;
+  line-height: 45px;
+}
+}
+@media (max-width: 767px){
+  .grid-colume-3 {
+    grid-template-columns: repeat(1, 1fr);
+}
+.grid-colume-2 {
+    grid-template-columns: repeat(1, 1fr);
+}
+.h1 {
+  font-size: 30px;
+  line-height: 40px;
+}
+.h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+}
+.p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.main-faq {
+  width: 95%;
+}
+label.main-tab-label.h4 {
+  font-size: 16px;
+  line-height: 26px;
+}
+.navbar-toggle {
+  color: #3a3a3a;
+}
+.logo {
+  margin-top: 18px;
+}
 }
