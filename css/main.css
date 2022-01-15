@@ -117,6 +117,11 @@ img{
   font-size: 24px;
   line-height: 150%;
 }
+.p{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
 i.fas.fa-arrow-right {
   margin-left: 10px;
   font-size: 17px;
@@ -279,4 +284,73 @@ i.fas.fa-star {
   background-color: transparent;
   color: #E02C6D;
   border-color: transparent;
+}
+/* faq section css */
+section.main-faq-section {
+  background-color: #fff;
+  padding: 40px 0;
+}
+.main-faq{
+  overflow: hidden;
+  width: 70%;
+  margin: 0 auto;
+}
+.text-center{
+  text-align: center;
+}
+.faq-heading.text-center {
+  margin-bottom: 30px;
+}
+.main-tab {
+  margin-top: 15px;
+}
+.main-faq .main-tab-toggle{
+  display: none;
+}
+.main-faq .main-tab-label{
+  background-color: #E02C6D;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.main-faq .main-tab-label:hover{
+  background-color: #8f224a;
+}
+.main-faq .main-tab-toggle:checked ~ .main-tab-label{
+  border-radius: 0 !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  background-color: #8f224a;
+}
+.main-faq .main-tab-label::after{
+  content: '\276F';
+  transition: all .4s;
+}
+.main-faq .main-tab-toggle:checked ~ .main-tab-label::after{
+  transform: rotate(90deg);
+}
+.main-faq .main-tab-content{
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all .4s;
+  padding: 0 1em;
+  text-align: left;
+}
+.main-faq .main-tab-content p{
+  
+  color: #fff;
+  
+}
+.main-faq .main-tab-toggle:checked ~ .main-tab-content{
+  border-radius: 0 !important;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  max-height: 100vh;
+  padding: 1em;
+
 }
