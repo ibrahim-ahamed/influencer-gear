@@ -419,6 +419,9 @@ label.main-tab-label.h4 {
 }
 }
 @media (max-width: 767px){
+  section.start-journy {
+    padding: 40px 0;
+}
   .grid-colume-3 {
     grid-template-columns: repeat(1, 1fr);
 }
